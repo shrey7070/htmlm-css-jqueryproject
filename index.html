@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>The New Fitness Cookbook</title>
+    <script   
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <style>
+        h1{
+            font-family:'Arial',cursive;
+            font-size: 40px; 
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            margin:-30px 0 50px 0;
+        }
+        body {  
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            max-width: 600px;
+            margin: auto;   
+        }
+        div{
+            height: 200px;
+            background-size: cover;
+            margin: 40px 30px 0px;
+            position: relative;
+            border-radius: 12px;
+            }
+        .First{
+            background: url("https://cdn.theculturetrip.com/images/56-3931189-15204301893-af30c30b9e-k.jpg");
+        }
+        .Second{
+            background: url("http://zavrel.net/pasta.jpg");
+        }
+        .Third{
+            background: url("http://ksmartstatic.sify.com/cmf-1.0.0/appflow/bawarchi.com/Image/oetnkFffbcahg_bigger.jpg");
+        }
+        p{
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(0,0,0,1);
+            background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.4));
+            padding: 18px;
+            text-align: justify;
+            line-height: 28 px;
+            position: absolute;
+            bottom: 0px;
+            margin: 0px;
+            width: auto;
+        }
+        .price{ 
+            float: right;
+        }
+        small{
+               opacity:0;
+        }
+        .show-decription p{
+            height: 150px;
+        }
+        .show-decription small{
+            opacity: 1;
+        }
+        @media(max-width:500px){
+            h1{
+                font-size: 50px;
+                color: red;
+                margin-top: 20px;
+                line-height: 50px;
+            }
+            h2{
+                font-size: 20px;
+                margin: 20px 0px 30px 0px;
+            }
+            div{
+                margin:40px 12px 0px 12px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 25px;
+            }
+            small{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>The New Fitness Cookbook</b></h1>
+    <h2>Fresh & Healthy Food</h2>
+    <div class="First">
+        
+        <p>Pizza<span class="price">$1</span><br>
+            <small>Pizza bread is a type of sandwich that is often served open-faced which consists of bread, tomato sauce, cheese and various toppings. ... Pizza sticks may be prepared with pizza dough and pizza ingredients, in which the dough is shaped into stick forms, sauce and toppings are added, and it is then baked. 
+        </small></p>
+    </div>
+    <div class="Second  ">
+        <p>Pasta<span class="price">$8</span><br>
+            <small>Also commonly used to refer to the variety of pasta dishes, pasta is typically made from an unleavened dough of a durum wheat flour mixed with water or eggs and formed into sheets or various shapes, then cooked by boiling or baking.
+        </small></p>
+    </div>
+    <div class="Third">    
+        <p>Khaman<span class="price">$15</span><br>
+            <small>Khaman is a food common in the Gujarat state of India made from soaked and freshly ground channa dal or channa flour. 
+        </small></p>
+    </div>
+    <script>
+        $('div').on('click',function(){
+            $(this).toggleClass('show-decription');
+        });
+        </script>
+</body>
+</html>
